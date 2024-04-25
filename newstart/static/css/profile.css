@@ -1,0 +1,291 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0px;
+    background-color: #1c1d19;
+}
+
+
+.score {
+    display: inline;
+    color: rgb(200, 200, 6);
+}
+
+.box-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+.header {
+    
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    background-color: #7e8987;
+}
+
+
+.header-text {
+    display: inline;
+    /* color: white; */
+    padding-top: 17px;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    font-style: normal;
+}
+
+.header-img {
+    display:inline;
+    height: 70px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 1re,;
+}
+.profile-image {
+    width: 15%;
+    height: 200px;
+}
+
+.profile-info {
+    padding-top: 1rem;
+    margin-left: 4rem;
+    line-height: 0.8rem;
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+textarea {
+    padding-top: 0.3rem;
+    resize:none;
+    font-size: 1rem;
+}
+
+
+
+
+
+.form-but {
+
+    text-decoration: None;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    height: 40px;
+    background-color: #27187e;
+    border-color: navy;
+    margin-left: 1.5rem;
+}
+
+.buttons {
+    padding-top: 1rem;
+    margin-left: 12rem;
+}
+
+
+.activity-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.male-block {
+    width: 33.3%;
+    height: auto;
+}
+
+.activity {
+    padding-top: 2rem;
+    width: 33.3%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.female-block {
+    width: 33.3%;
+    height: auto;
+}
+
+.user-image-block {
+    width: 370px;
+    margin-bottom: 1rem;
+}
+
+
+.user-image {
+    background-size: cover;
+}
+
+.user-desc {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    line-height: 1rem;
+}
+.user-bio {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    width: 370px;
+}
+
+.clickables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.pass {
+    background-color: red;
+}
+.pass:hover {
+    background-color: rgb(195, 7, 7);
+}
+
+.butn {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    height: 3rem;
+    width: 6rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#or {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.9rem;
+}
+
+.score-table {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    width: 95%;
+    font-size: 0.9rem;
+}
+
+.male-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.female-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-heading {
+    color: rgb(200, 200, 6);
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+}
+
+
+.table-img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.preferences {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid blue;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+#preference-head {
+    margin-top: 1%;
+    font-weight: bold;
+    color: rgb(200, 200, 6);
+}
+
+.preferences-form {
+    margin-left: 1.5rem;
+}
+.preference-label {
+    margin-left: 0.5rem;
+}
+
+.preference-submit {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    background-color: #17b890;
+}
+
+.preference-submit:hover {
+    background-color: #7eb77f;
+}
+
+
+
+.footer-block {
+    margin-top: 15rem;
+}
+
+.footer {
+    /* margin-top: 10rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    background-color: #7e8987;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.pagination {
+    font-family: "Rubik", sans-serif;
+    color: white;
+}

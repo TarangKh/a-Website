@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>home</title>
+    <style>
+        table {
+            width: 500px;
+            height: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            padding-left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Home Page.</h1>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <h2>Data About Students</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Can Vote</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in data %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.age }}</td>
+                <td {% if student.age >= 18 %} style = "background-color:green;"
+                     {% else %} style = "background-color:red;" {% endif %}>
+                    {% if student.age >= 18 %} 👍
+                    {% else %} 👎
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
